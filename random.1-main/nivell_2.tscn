@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://csb7mupxqfkk4"]
+
+[ext_resource type="Script" uid="uid://ddvmd0wy58pas" path="res://nivell_2.gd" id="1_dof8l"]
+[ext_resource type="Texture2D" uid="uid://dw3unf5fimfun" path="res://Captura (1204).png" id="2_a4uvn"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dof8l")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 110.0
+offset_bottom = 40.0
+text = "nivell 2"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 441.0
+offset_top = 248.0
+offset_right = 533.0
+offset_bottom = 279.0
+scale = Vector2(4.8375, 5.33059)
+text = "Start"
+
+[node name="Captura(1204)" type="Sprite2D" parent="."]
+position = Vector2(641, 316)
+scale = Vector2(1.49452, 1.29568)
+texture = ExtResource("2_a4uvn")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
